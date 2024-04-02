@@ -29,6 +29,7 @@ const Table = ({ tasks }) => {
     const handleResize = () => {
       setFilterAlwaysOn($(window).width() > 1200);
     };
+    handleResize();
     window.addEventListener("resize", handleResize);
     return () => {
       window.removeEventListener("resize", handleResize);

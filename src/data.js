@@ -1,4 +1,4 @@
-export const data1 = [
+export const tasks = [
   {
     id: 0,
     type: "final clean",
@@ -197,7 +197,7 @@ export const data1 = [
   },
 ];
 
-export const data2 = [
+export const cleaners = [
   {
     id: 2,
     first_name: "Jaan",

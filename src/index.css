@@ -72,11 +72,18 @@ button{
 .drop-down {
     padding-left: 7px;
     height: 29px;
+    width: 41px;
     border: 1px solid;
     border-radius: 7px;
     cursor: pointer;
     outline: none;
-    background: white;
+    background-color: white;
+
+    appearance: none;
+    background-image: url("assets/icons/chevron-down.svg");
+    background-repeat: no-repeat;
+    background-position: right 7px top 50%;
+    background-size: 8px auto;
 }
 
 .drop-down:hover{
