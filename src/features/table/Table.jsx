@@ -22,18 +22,11 @@ const Table = ({ tasks }) => {
   const currentRows = filteredData.slice(startIndex, endIndex);
 
   useEffect(() => {
-    setFilteredData(tasks);
-  }, [tasks]);
-
-  useEffect(() => {
     const handleResize = () => {
       setFilterAlwaysOn($(window).width() > 1200);
     };
     handleResize();
     window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
   }, []);
 
   const formatDate = (dateString) => {

@@ -10,7 +10,7 @@ function ClickOutsideDetector({ children, show, setShow, alwaysShow }) {
   });
 
   const handleClickOutside = (event) => {
-    if (ref.current && !ref.current.contains(event.target)) {
+    if (!ref.current.contains(event.target)) {
       setShow(false);
     }
   };

@@ -22,7 +22,7 @@ const Pagination = ({
     setCurrentPage(newPage);
   };
   const handleChangeRowsPerPage = ({ target }) => {
-    setRowsPerPage(parseInt(target.value, 10));
+    setRowsPerPage(target.value);
     setCurrentPage(1);
   };
 
